@@ -1,5 +1,7 @@
 # WIN/WDO Quant Research Lab
 
+[![Automated tests](https://github.com/Tzaratin/win-wdo-quant-research/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/Tzaratin/win-wdo-quant-research/actions/workflows/tests.yml)
+
 > An audit-first research framework for testing systematic strategies in Brazilian B3 mini futures.
 
 **Project status:** active research · public release in progress · research/shadow use only
