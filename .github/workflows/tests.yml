@@ -1,0 +1,30 @@
+name: Testes automatizados
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar o código do repositório
+        uses: actions/checkout@v6
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar ferramenta de testes
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest
+
+      - name: Executar o exemplo público
+        run: python examples/public_validation_example.py
+
+      - name: Executar os testes automatizados
+        run: pytest -q
