@@ -1,0 +1,67 @@
+# Senhas e configurações privadas
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Node.js
+node_modules/
+
+# Sessões e autenticação
+.wwebjs_auth/
+.wwebjs_cache/
+wa-session/
+sessions/
+
+# Bancos e estados operacionais
+*.db
+*.sqlite
+*.sqlite3
+estado_agentes/
+
+# Logs e arquivos temporários
+*.log
+logs/
+cache/
+tmp/
+debug_capturas/
+
+# Backups e arquivos compactados
+backups/
+backup/
+arquivo/
+*.zip
+*.rar
+*.7z
+
+# Dados históricos de mercado
+*_M1_*.csv
+*_M5_*.csv
+*_D1_*.csv
+win_M5_full.csv
+wdo_M5_full.csv
+win_D1_full.csv
+wdo_D1_full.csv
+ext_*.csv
+data/
+dados/
+datasets/
+
+# Resultados gerados
+results/
+resultados/
+outputs/
+
+# Arquivos do Windows e editores
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
